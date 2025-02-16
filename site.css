@@ -1,0 +1,349 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/fundo4.jpg);
+    background-size: cover; /* Make the image cover the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make sure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex ; 
+    justify-content: center; 
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 4px solid white;
+    
+    padding: 20px; 
+    
+}
+
+
+
+nav a {
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: medium;
+}
+
+nav a:hover {
+    background-color: #033f8f;
+    padding: 14px 50px ;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+
+
+
+
+h1{
+    font-family: "Poppins",serif;
+   font-weight: 700;
+   font-style: italic;
+   font-size: 70px;
+    margin-left: 100px;
+    text-shadow: 5px -10px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    -webkit-text-stroke: 2px red;
+    margin-bottom: -10px;
+}
+
+
+div#coisa {
+    background-image: url("file:///C:/Users/amoraes2/Geovanna/Imagens/selo2.png");
+    background-color: transparent;
+   width: 1000px ;
+   height: 667px;
+   margin-left: 200px;
+   margin-top: 0px;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border: 0px;
+   background-size: 1000px;
+    display: inline-block ;
+    font-family: "Poppins", serif ;
+}
+
+#um {
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    
+    width: 850px;
+    height: 450px;
+    margin-left: 80px;
+    margin-top: 120px;
+    font-weight: 700;
+    font-style: normal;
+font-size: 18px;
+}
+
+#dois {
+    background-image: url(https://cdn.pixabay.com/photo/2012/04/15/20/50/stamp-35281_960_720.png);
+    border: 0px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: block ;
+    width: 200px;
+    height: 200px;
+   margin-bottom: 700px;
+    margin-top: -100px;
+   margin-left: 720px;
+}
+
+#secao1 {
+    font-family: "Poppins",serif;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 100px;
+    
+}
+
+#secao2 {
+    font-family: "Poppins",serif;
+    width: 200px;
+    height: 50px;
+    margin-top: 700px;
+}
+
+#gol {
+    display: inline-block;
+    width: 1625px ;
+    height: 567px;
+   border-top: 4px solid white;
+  
+    background-color: transparent;
+}
+
+#bola {
+    background-image: url('file:///C:/Users/amoraes2/Geovanna/Imagens/papel1.png');
+    background-color: transparent;
+    width: 1000px ;
+    height: 667px;
+    margin-left: 200px;
+    margin-top: 0px;
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     border: 0px;
+     display: inline-block ;
+     font-family: "Poppins", serif ;
+    background-size: 1000px;
+}
+
+#santos {
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    border: 10px ;
+    width: 700px;
+    height: 450px;
+    margin-left: 80px;
+    margin-top: 60px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#secao3 {
+    font-family: "Poppins",serif;
+    width: 200px;
+    height: 50px;
+    margin-top: 700px;
+}
+
+#complicada {
+    display: inline-block;
+    width: 1625px ;
+    height: 567px;
+   border-top: 4px solid white;
+  
+    background-color: transparent;
+}
+
+#e {
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/papel2.png);
+    background-color: transparent;
+    width: 1000px ;
+    height: 667px;
+    margin-left: 200px;
+    margin-top: 0px;
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     border: 0px;
+     display: inline-block ;
+     font-family: "Poppins", serif ;
+    background-size: 1100px;
+}
+
+#perfeitinha{
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    border: 10px ;
+    width: 700px;
+    height: 450px;
+    margin-left: 80px;
+    margin-top: 70px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#secao4 {
+    font-family: "Poppins",serif;
+    width: 200px;
+    height: 50px;
+    margin-top: 700px;
+}
+
+#jorge {
+    display: inline-block;
+    width: 1650px ;
+    height: 667px;
+   border-top: 4px solid white;
+  
+    background-color: transparent;
+}
+
+#ben {
+    display: inline-block;
+    width: 1000px ;
+    height: 567px;
+    background-color: transparent;
+    margin-top: 100px;
+}
+
+#jor {
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame1.png);
+    background-size: 350px;
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    
+}
+
+#motta{
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: 350px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-style: normal;
+   
+}
+
+#pais {
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame2.png);
+    background-size: 360px;
+    width: 510px;
+    height: 410px;
+    background-repeat: no-repeat;
+    margin-left: 430px;
+    margin-top: -500px;
+}
+
+#gui {
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: 350px;
+    margin-left: 5px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#tropical {
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame3.png);
+    background-size: 360px;
+    width: 510px;
+    height: 410px;
+    background-repeat: no-repeat;
+    margin-left: 820px;
+    margin-top: -410px;
+}
+
+#oi {
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: 350px;
+    margin-left: 100px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#magnolia {
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame4.png);
+    background-size: 360px;
+    width: 510px;
+    height: 410px;
+    background-repeat: no-repeat;
+    margin-left: 1220px;
+    margin-top: -410px;
+}
+
+#oculos{
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: 350px;
+    margin-left: 60px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#secao5 {
+    font-family: "Poppins",serif;
+    width: 200px;
+    height: 50px;
+    margin-top: 700px;
+}
+
+#indiana {
+    display: inline-block;
+    width: 1625px ;
+    height: 667px;
+   border-top: 4px solid white;
+   margin-top: 100px;
+    background-color: transparent;
+}
+
+#jones{
+    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/lapis2.png);
+    background-color: transparent;
+    width: 1000px ;
+    height: 667px;
+    margin-left: 210px;
+    margin-top: 20px;
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     border: 0px;
+     display: inline-block ;
+     font-family: "Poppins", serif ;
+    background-size: 1100px;
+}
+
+#palito{
+    font-family: "Poppins",serif;
+    background-color: transparent;
+    display: inline-block;
+    border: 10px ;
+    width: 700px;
+    height: 450px;
+    margin-left: 190px;
+    margin-top: 90px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
