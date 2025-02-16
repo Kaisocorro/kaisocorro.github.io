@@ -62,7 +62,7 @@ h1{
 
 
 div#coisa {
-    background-image: url("file:///C:/Users/amoraes2/Geovanna/Imagens/selo2.png");
+    background-image: url(../images/selo2.png);
     background-color: transparent;
    width: 1000px ;
    height: 667px;
@@ -128,7 +128,7 @@ font-size: 18px;
 }
 
 #bola {
-    background-image: url('file:///C:/Users/amoraes2/Geovanna/Imagens/papel1.png');
+    background-image: url(../images/papel1.png);
     background-color: transparent;
     width: 1000px ;
     height: 667px;
@@ -172,7 +172,7 @@ font-size: 18px;
 }
 
 #e {
-    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/papel2.png);
+    background-image: url(../images/papel2.png);
     background-color: transparent;
     width: 1000px ;
     height: 667px;
@@ -224,7 +224,7 @@ font-size: 18px;
 }
 
 #jor {
-    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame1.png);
+    background-image: url(../images/frame1.png);
     background-size: 350px;
     width: 500px;
     height: 500px;
@@ -245,7 +245,7 @@ font-size: 18px;
 }
 
 #pais {
-    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame2.png);
+    background-image: url(../images/frame2.png);
     background-size: 360px;
     width: 510px;
     height: 410px;
@@ -265,7 +265,7 @@ font-size: 18px;
 }
 
 #tropical {
-    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame3.png);
+    background-image: url(../images/frame3.png);
     background-size: 360px;
     width: 510px;
     height: 410px;
@@ -285,7 +285,7 @@ font-size: 18px;
 }
 
 #magnolia {
-    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/frame4.png);
+    background-image: url(../images/frame4.png);
     background-size: 360px;
     width: 510px;
     height: 410px;
@@ -321,7 +321,7 @@ font-size: 18px;
 }
 
 #jones{
-    background-image: url(file:///C:/Users/amoraes2/Geovanna/Imagens/lapis2.png);
+    background-image: url(../images/lapis2.png);
     background-color: transparent;
     width: 1000px ;
     height: 667px;
