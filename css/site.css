@@ -215,12 +215,14 @@ font-size: 18px;
     background-color: transparent;
 }
 
-#ben {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px; /* espaçamento entre os itens */
-  justify-content: center;
-  margin-top: 100px;
+  #ben {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* espaço entre os cards */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+
 }
 
 #ben > div {
