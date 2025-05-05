@@ -216,12 +216,30 @@ font-size: 18px;
 }
 
 #ben {
-    display: inline-block;
-    width: 1000px ;
-    height: 567px;
-    background-color: transparent;
-    margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* espaçamento entre os itens */
+  justify-content: center;
+  margin-top: 100px;
 }
+
+#ben > div {
+  width: 510px;
+  height: 410px;
+  background-repeat: no-repeat;
+  background-size: 360px;
+  position: relative;
+}
+
+#ben > div > div {
+  font-family: "Poppins", serif;
+  background-color: transparent;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 700;
+}
+
 
 #jor {
     background-image: url(../images/frame1.png);
@@ -246,12 +264,7 @@ font-size: 18px;
 
 #pais {
     background-image: url(../images/frame2.png);
-    background-size: 360px;
-    width: 510px;
-    height: 410px;
-    background-repeat: no-repeat;
-    margin-left: 430px;
-    margin-top: -500px;
+    
 }
 
 #gui {
@@ -266,12 +279,7 @@ font-size: 18px;
 
 #tropical {
     background-image: url(../images/frame3.png);
-    background-size: 360px;
-    width: 510px;
-    height: 410px;
-    background-repeat: no-repeat;
-    margin-left: 820px;
-    margin-top: -410px;
+    
 }
 
 #oi {
@@ -286,12 +294,7 @@ font-size: 18px;
 
 #magnolia {
     background-image: url(../images/frame4.png);
-    background-size: 360px;
-    width: 510px;
-    height: 410px;
-    background-repeat: no-repeat;
-    margin-left: 1220px;
-    margin-top: -410px;
+   
 }
 
 #oculos{
@@ -306,13 +309,7 @@ font-size: 18px;
 
 #ind{
 background-image: url(../images/00.png); 
-    background-size: 360px;
-    width: 510px;
-    height: 410px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 50px;
-    margin-top: 100px;
+    
       
 }
 
@@ -328,13 +325,7 @@ background-image: url(../images/00.png);
 
 #marina{
     background-image: url(../images/au.png); 
-    background-size: 360px;
-    width: 510px;
-    height: 410px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 50px;
-    margin-top: 400px;
+  
 }
 
 #elisa{
@@ -351,13 +342,7 @@ font-family: "Poppins",serif;
 
 #joana{
  background-image: url(../images/ue.png); 
-    background-size: 360px;
-    width: 510px;
-    height: 410px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 50px;
-    margin-top: 800px;
+   
 }
 
 #azu{
