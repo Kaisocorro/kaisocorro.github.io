@@ -1,4 +1,3 @@
-/* Configurações de comportamento da página */
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -6,12 +5,12 @@ html {
 
 body {
     background-image: url(../images/fundo4.jpg);
-    background-size: cover; /* Faz a imagem cobrir todo o corpo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    height: 100vh; /* Garante que o corpo ocupe a altura completa da tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
     margin: 0; /* Remove a margem padrão */
-    background-attachment: fixed;
+    background-attachment: fixed; /* A imagem de fundo fica fixa ao rolar */
     overflow-x: hidden;
 }
 
@@ -23,7 +22,7 @@ nav {
     width: 100%;
     background-color: #333;
     padding: 10px;
-    z-index: 1000; /* Garante que a barra de navegação fique acima das imagens */
+    z-index: 1000; /* Garante que a barra de navegação fique acima de tudo */
 }
 
 nav ul {
@@ -40,16 +39,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s; /* Efeito de transição suave */
+    padding: 8px 12px;
 }
 
-/* Estilo do hover da navegação */
+/* Efeito de hover na navegação */
 nav a:hover {
     background-color: #033f8f;
-    padding: 14px 50px;
-    text-decoration: none;
+    padding: 14px 20px;
     display: inline-block;
-    margin-right: 20px;
 }
 
 /* Estilo das seções */
@@ -57,64 +54,41 @@ section {
     margin-top: 60px; /* Espaço para a barra de navegação */
     padding: 20px;
     min-height: 100vh; /* Garante que cada seção ocupe ao menos a altura da tela */
-    overflow: hidden; /* Evita que as imagens saiam de seus limites */
+    position: relative;
 }
 
+/* Imagens nas seções */
 section img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
-    z-index: 1;
-    position: relative;
 }
 
-/* Estilo específico para as imagens */
+/* Evitar sobreposição de imagens */
 section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
     z-index: 1;
     position: relative;
 }
 
-/* Estilos dos elementos de conteúdo */
-h1 {
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 70px;
-    margin-left: 100px;
-    text-shadow: 5px -10px 5px rgba(0, 0, 0, 0.5);
-    color: white;
-    -webkit-text-stroke: 2px red;
-    margin-bottom: -10px;
-}
-
-div#coisa {
-    background-image: url(../images/selo2.png);
-    background-color: transparent;
-    width: 1000px;
-    height: 667px;
-    margin-left: 200px;
-    margin-top: 0px;
+/* Estilo das seções com imagens de fundo */
+section div {
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    border: 0px;
-    background-size: 1000px;
-    display: inline-block;
-    font-family: "Poppins", serif;
 }
 
-/* Estilos para os diferentes containers e elementos */
-#um, #santos, #perfeitinha, #motta, #gui, #oi, #elisa, #azu, #palito {
-    font-family: "Poppins", serif;
-    background-color: transparent;
+/* Ajustes específicos para as imagens e seções */
+#coisa, #bola, #e, #indiana {
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
+#coisa, #bola, #e, #indiana {
     display: inline-block;
-    margin-left: 80px;
-    margin-top: 60px;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Poppins", serif;
+    margin-left: 200px;
+    margin-top: 0;
 }
 
 #secao1, #secao2, #secao3, #secao4, #secao5 {
@@ -123,12 +97,19 @@ div#coisa {
     height: 50px;
 }
 
+#gol, #complicada, #jorge {
+    display: inline-block;
+    width: 1625px;
+    height: 567px;
+    border-top: 4px solid white;
+    background-color: transparent;
+}
+
 #ben {
     display: flex;
     flex-wrap: wrap;
     gap: 40px; /* Espaço entre os cards */
     justify-content: center;
-    align-items: flex-start;
     padding: 50px;
 }
 
@@ -149,46 +130,28 @@ div#coisa {
     font-weight: 700;
 }
 
-/* Imagens de fundo nos containers */
-#jorge, #indiana, #ind, #tropical, #magnolia {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#jorge {
-    width: 1650px;
-    height: 667px;
-    border-top: 4px solid white;
-    background-color: transparent;
-}
-
-#jones {
-    background-image: url(../images/lapis2.png);
-    background-color: transparent;
-    width: 1000px;
-    height: 667px;
-    margin-left: 210px;
-    margin-top: 20px;
-    background-repeat: no-repeat;
-    border: 0px;
-    display: inline-block;
-    font-family: "Poppins", serif;
-    background-size: 1100px;
-}
-
-#sol, #joana, #manina, #santos, #elisa {
-    font-family: "Poppins", serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 60px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* Adaptação para dispositivos móveis */
+/* Ajuste para responsividade */
 @media (max-width: 768px) {
-    .column {
-        flex: 1 1 100%;
+    nav ul {
+        flex-direction: column; /* Ajusta a navegação para coluna em telas menores */
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    #coisa, #bola, #e, #indiana {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #ben > div {
+        width: 100%; /* Faz os cards ocuparem toda a largura */
+    }
+
+    #gol, #complicada, #jorge {
+        width: 100%;
+        height: auto;
     }
 }
+
