@@ -1,19 +1,20 @@
-html{
+/* Configurações de comportamento da página */
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-body{
-    
+body {
     background-image: url(../images/fundo4.jpg);
-    background-size: cover; /* Make the image cover the entire body */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 100vh; /* Make sure the body takes up the full height of the viewport */
-    margin: 0; /* Remove default margin */
+    background-size: cover; /* Faz a imagem cobrir todo o corpo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 100vh; /* Garante que o corpo ocupe a altura completa da tela */
+    margin: 0; /* Remove a margem padrão */
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
 /* Estilo da barra de navegação */
 nav {
     position: fixed; /* Fixa a barra de navegação no topo */
@@ -39,6 +40,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+/* Estilo do hover da navegação */
+nav a:hover {
+    background-color: #033f8f;
+    padding: 14px 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 /* Estilo das seções */
@@ -46,6 +57,7 @@ section {
     margin-top: 60px; /* Espaço para a barra de navegação */
     padding: 20px;
     min-height: 100vh; /* Garante que cada seção ocupe ao menos a altura da tela */
+    overflow: hidden; /* Evita que as imagens saiam de seus limites */
 }
 
 section img {
@@ -53,33 +65,26 @@ section img {
     height: auto;
     display: block;
     margin: 20px auto;
-}
-
-/* Evitar sobreposição de imagens */
-section img {
     z-index: 1;
     position: relative;
 }
 
-
-nav a:hover {
-    background-color: #033f8f;
-    padding: 14px 50px ;
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 20px;
-    
+/* Estilo específico para as imagens */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    z-index: 1;
+    position: relative;
 }
 
-
-
-
-
-h1{
-    font-family: "Poppins",serif;
-   font-weight: 700;
-   font-style: italic;
-   font-size: 70px;
+/* Estilos dos elementos de conteúdo */
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 70px;
     margin-left: 100px;
     text-shadow: 5px -10px 5px rgba(0, 0, 0, 0.5);
     color: white;
@@ -87,372 +92,103 @@ h1{
     margin-bottom: -10px;
 }
 
-
 div#coisa {
     background-image: url(../images/selo2.png);
     background-color: transparent;
-   width: 1000px ;
-   height: 667px;
-   margin-left: 200px;
-   margin-top: 0px;
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    border: 0px;
-   background-size: 1000px;
-    display: inline-block ;
-    font-family: "Poppins", serif ;
-}
-
-#um {
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    
-    width: 850px;
-    height: 450px;
-    margin-left: 80px;
-    margin-top: 120px;
-    font-weight: 700;
-    font-style: normal;
-font-size: 18px;
-}
-
-#dois {
-    background-image: url(https://cdn.pixabay.com/photo/2012/04/15/20/50/stamp-35281_960_720.png);
-    border: 0px;
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    display: block ;
-    width: 200px;
-    height: 200px;
-   margin-bottom: 700px;
-    margin-top: -100px;
-   margin-left: 720px;
-}
-
-#secao1 {
-    font-family: "Poppins",serif;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 100px;
-    
-}
-
-#secao2 {
-    font-family: "Poppins",serif;
-    width: 200px;
-    height: 50px;
-    margin-top: 700px;
-}
-
-#gol {
-    display: inline-block;
-    width: 1625px ;
-    height: 567px;
-   border-top: 4px solid white;
-  
-    background-color: transparent;
-}
-
-#bola {
-    background-image: url(../images/papel1.png);
-    background-color: transparent;
-    width: 1000px ;
+    width: 1000px;
     height: 667px;
     margin-left: 200px;
     margin-top: 0px;
-     background-repeat: no-repeat; /* Prevents the image from repeating */
-     border: 0px;
-     display: inline-block ;
-     font-family: "Poppins", serif ;
+    background-repeat: no-repeat;
+    border: 0px;
     background-size: 1000px;
+    display: inline-block;
+    font-family: "Poppins", serif;
 }
 
-#santos {
-    font-family: "Poppins",serif;
+/* Estilos para os diferentes containers e elementos */
+#um, #santos, #perfeitinha, #motta, #gui, #oi, #elisa, #azu, #palito {
+    font-family: "Poppins", serif;
     background-color: transparent;
     display: inline-block;
-    border: 10px ;
-    width: 700px;
-    height: 450px;
     margin-left: 80px;
     margin-top: 60px;
     font-weight: 700;
     font-style: normal;
-    font-size: 15px;
 }
 
-#secao3 {
-    font-family: "Poppins",serif;
+#secao1, #secao2, #secao3, #secao4, #secao5 {
+    font-family: "Poppins", serif;
     width: 200px;
     height: 50px;
-    margin-top: 700px;
 }
 
-#complicada {
-    display: inline-block;
-    width: 1625px ;
-    height: 567px;
-   border-top: 4px solid white;
-  
-    background-color: transparent;
-}
-
-#e {
-    background-image: url(../images/papel2.png);
-    background-color: transparent;
-    width: 1000px ;
-    height: 667px;
-    margin-left: 200px;
-    margin-top: 0px;
-     background-repeat: no-repeat; /* Prevents the image from repeating */
-     border: 0px;
-     display: inline-block ;
-     font-family: "Poppins", serif ;
-    background-size: 1100px;
-}
-
-#perfeitinha{
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    border: 10px ;
-    width: 700px;
-    height: 450px;
-    margin-left: 80px;
-    margin-top: 70px;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-}
-
-#secao4 {
-    font-family: "Poppins",serif;
-    width: 200px;
-    height: 50px;
-    margin-top: 700px;
-}
-
-#jorge {
-    display: inline-block;
-    width: 1650px ;
-    height: 667px;
-   border-top: 4px solid white;
-  
-    background-color: transparent;
-}
-
-  #ben {
+#ben {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px; /* espaço entre os cards */
+    gap: 40px; /* Espaço entre os cards */
     justify-content: center;
     align-items: flex-start;
     padding: 50px;
-
 }
 
 #ben > div {
-  width: 510px;
-  height: 410px;
-  background-repeat: no-repeat;
-  background-size: 360px;
-  position: relative;
+    width: 510px;
+    height: 410px;
+    background-repeat: no-repeat;
+    background-size: 360px;
+    position: relative;
 }
 
 #ben > div > div {
-  font-family: "Poppins", serif;
-  background-color: transparent;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-weight: 700;
+    font-family: "Poppins", serif;
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 700;
 }
 
-
-#jor {
-    background-image: url(../images/frame1.png);
-    background-size: 350px;
-    width: 500px;
-    height: 500px;
+/* Imagens de fundo nos containers */
+#jorge, #indiana, #ind, #tropical, #magnolia {
     background-repeat: no-repeat;
-    margin-left: 50px;
-    
+    background-size: cover;
 }
 
-#motta{
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 20px;
-    font-weight: 700;
-    font-style: normal;
-   
-}
-
-#pais {
-    background-image: url(../images/frame2.png);
-    
-}
-
-#gui {
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 5px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-#tropical {
-    background-image: url(../images/frame3.png);
-    
-}
-
-#oi {
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 100px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-#magnolia {
-    background-image: url(../images/frame4.png);
-   
-}
-
-#oculos{
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 60px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-#ind{
-background-image: url(../images/00.png); 
-    
-      
-}
-
-#sol{
-    font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 60px;
-    font-weight: 700;
-    font-style: normal;
-}
-
-#manina{
-    background-image: url(../images/au.png); 
-  
-}
-
-#elisa{
-font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 60px;
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-
-#joana{
- background-image: url(../images/ue.png); 
-   
-}
-
-#azu{
-font-family: "Poppins",serif;
-    background-color: transparent;
-    display: inline-block;
-    margin-top: 350px;
-    margin-left: 60px;
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-#secao5 {
-    font-family: "Poppins",serif;
-    width: 200px;
-    height: 50px;
-    margin-top: 700px;
-}
-
-#indiana {
-    display: inline-block;
-    width: 1625px ;
+#jorge {
+    width: 1650px;
     height: 667px;
-   border-top: 4px solid white;
-   margin-top: 100px;
+    border-top: 4px solid white;
     background-color: transparent;
 }
 
-#jones{
+#jones {
     background-image: url(../images/lapis2.png);
     background-color: transparent;
-    width: 1000px ;
+    width: 1000px;
     height: 667px;
     margin-left: 210px;
     margin-top: 20px;
-     background-repeat: no-repeat; /* Prevents the image from repeating */
-     border: 0px;
-     display: inline-block ;
-     font-family: "Poppins", serif ;
+    background-repeat: no-repeat;
+    border: 0px;
+    display: inline-block;
+    font-family: "Poppins", serif;
     background-size: 1100px;
 }
 
-#palito{
-    font-family: "Poppins",serif;
+#sol, #joana, #manina, #santos, #elisa {
+    font-family: "Poppins", serif;
     background-color: transparent;
     display: inline-block;
-    border: 10px ;
-    width: 700px;
-    height: 450px;
-    margin-left: 190px;
-    margin-top: 90px;
+    margin-top: 350px;
+    margin-left: 60px;
     font-weight: 700;
     font-style: normal;
-    font-size: 20px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.column {
-    flex: 1 1 300px;
-    background: #f4f4f4;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Mobile styles */
+/* Adaptação para dispositivos móveis */
 @media (max-width: 768px) {
     .column {
         flex: 1 1 100%;
     }
 }
-
-
